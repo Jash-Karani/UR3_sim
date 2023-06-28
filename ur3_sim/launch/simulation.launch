@@ -1,7 +1,8 @@
 <launch>
+  <param name="test" value="1,2,3,4" />
   <!-- Launch gazebo simulation -->
   <include file="$(find ur3_sim_gazebo)/launch/ur3_sim.launch"/>
-
+  <!-- <include file="$(find gazebo_ros)/launch/empty_world.launch"/> -->
   <!-- Launch MoveIt!-->
   <include file="$(find ur3_sim_moveit_config)/launch/ur3_sim_moveit_planning_execution.launch"/>
 
